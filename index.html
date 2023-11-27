@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<!--  meta tags => not displayed on the web page, but provide metadata to browsers  -->
+ 		<!-- example: meta "viewport" => properties of how the page is displayed on different devices -->
+ 		<!-- exmaple: meta "description" => short description of the content of the page. used by search engines when displaying search results. -->
+		<meta charset="utf-8">  <!-- utf-8 is the character encoding for the HTML document => ensures that browser interprets the text correctly -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+	
+		<title>Autocomplete and Suggestion Feature</title>
+
+		<!-- "link" tag => link between a document and an external resource => resource is often an external stylesheet, favicon, specifying a relationship between documents -->
+		<link rel="shortcut icon" href="img/favicon.ico">		
+		<link rel="stylesheet" type="text/css" href="src/style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+
+	</head>
+
+	<body>
+		<header class="header-fixed">
+			<div class="header-limiter">
+				<h1>Word Suggestion using Trie Data Structure</h1>
+			</div>
+		</header>
+		<!-- You need this element to prevent the content of the page from jumping up -->
+		<div class="header-fixed-placeholder"></div>
+
+		<div class="container">
+			<div class="body">
+				<div class="input-form">
+				 	<input type="text" name="input" class="input" placeholder="🔍Looking for some word?? " >		
+				</div>
+				<div class="display-result">   
+					<!-- this class displays the results -->
+				</div> 
+			</div>
+		</div>
+		<!-- The line below =>include jQuery in HTML doc. referencing it from the Google CDN -->
+		<!-- jQuery is a fast, lightweight, and feature-rich JavaScript library. provides easy-to-use API, event handling, AJAX requests, and animations -->
+		<!-- AJAX => Asynchronous JavaScript and XML. allow web pages to communicate with a server asynchronously, updating content dynamically without requiring a full page reload-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<!-- "script" tag has 2 uses => 1. write inline JS in HTML doc, 2. link to an external JS file-->
+		<script type="text/javascript" src="src/search.js"></script>
+	</body>
+</html>
+

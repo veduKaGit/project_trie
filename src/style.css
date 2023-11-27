@@ -1,0 +1,99 @@
+*{
+	padding : 0px ;
+	margin : 0px ;
+}
+
+.input {
+	text-align: center;
+}
+
+.input-form {
+	margin: 0 auto;
+	max-width: 55%;
+}
+
+input:focus, textarea:focus, select:focus{
+    box-shadow: 1px 1px 8px 1px #02f6fe;
+    outline:none;
+}
+
+input:focus-within{
+    box-shadow: 1px 1px 8px 1px #02f6fe;
+    outline:none;
+}
+
+input.input {
+	border: none;
+    border-top: 2px solid blue;
+    border-bottom: 2px solid blue;
+	border-radius: 75px;
+	width: 100%;
+    height: 35px;
+    padding: 1.2%;
+    font-size: larger;
+    margin-top: 3%;
+}
+
+.display-result {
+    margin: auto;
+    max-width: 55%;
+}
+
+.words {
+  	font-family: 'Balsamiq Sans', cursive;
+    cursor: pointer;
+    text-align: center;
+    padding: 7px;
+    margin-top: 4px;
+    border: 1px solid;
+    border-top: none;
+    margin-left: 12px;
+}
+
+.header-fixed {
+	background-color:#031e3a;
+	box-shadow:0 1px 1px #ccc;
+	padding: 20px 40px;
+	height: 75px;
+	color: #ffffff;
+	box-sizing: border-box;
+	top:-100px;
+
+	-webkit-transition:top 0.3s;
+	transition:top 0.3s;
+}
+
+.header-fixed .header-limiter h1 span {
+	color: #5383d3;
+}
+
+.header-fixed .header-limiter a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+
+@media all and (max-width: 600px) {
+
+	.header-fixed {
+		padding: 10px 0;
+		height: 55px;
+	}
+
+	.header-fixed .header-limiter h1 {
+		float: none;
+		margin: -8px 0 10px;
+		text-align: center;
+		font-size: 22px;
+		line-height: 1;
+	}
+
+	.header-fixed .header-limiter nav {
+		line-height: 1;
+		float:none;
+	}
+
+	.header-fixed .header-limiter nav a {
+		font-size: 13px;
+	}
+}
